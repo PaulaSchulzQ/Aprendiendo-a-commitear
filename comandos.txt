@@ -1,0 +1,93 @@
+Paula@DESKTOP-COA2T21 MINGW64 ~ (master)
+$ cd Desktop/
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop (master)
+$ mkdir test
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop (master)
+$ cd test/
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ touch index.html
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ touch style.css
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git init
+Initialized empty Git repository in C:/Users/Paula/Desktop/test/.git/
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git add .
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git commit -m "iniciando test"
+[master (root-commit) 3c206d2] iniciando test
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git remote add origin https://github.com/PaulaSchulzQ/Aprendiendo-a-commitear.git
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git add .
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git commit -m "actualizacion html"
+[master 91c6257] actualizacion html
+ 1 file changed, 14 insertions(+)
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git add .
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git commit -m "actualizacion css"
+[master da0160e] actualizacion css
+ 1 file changed, 5 insertions(+)
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git log
+commit da0160e7859d1db7740b025a8feaa1d715cc9a21 (HEAD -> master)
+Author: Your Name <paula.schulz.01@gmail.com>
+Date:   Thu Dec 3 20:21:26 2020 -0300
+
+    actualizacion css
+
+commit 91c62575740779c0b901971dea21b58347d5465d
+Author: Your Name <paula.schulz.01@gmail.com>
+Date:   Thu Dec 3 20:20:06 2020 -0300
+
+    actualizacion html
+
+commit 3c206d2a7054220b150e7667a5123c30fab93d03
+Author: Your Name <paula.schulz.01@gmail.com>
+Date:   Thu Dec 3 20:16:10 2020 -0300
+
+    iniciando test
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git reset --soft HEAD~1
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git add .
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git commit -m "nueva actualizacion css"
+[master 555db0f] nueva actualizacion css
+ 1 file changed, 6 insertions(+)
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 1005 bytes | 251.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/PaulaSchulzQ/Aprendiendo-a-commitear.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Paula@DESKTOP-COA2T21 MINGW64 ~/Desktop/test (master)
+$ touch comandos.txt
